@@ -1,11 +1,37 @@
-# 모든 파일 무시
-*
+# Unity 기본 무시 항목
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.unityproj
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.png
+*.asset
+*.fbx
+*.meta
 
-# Assets 폴더 및 하위 폴더 포함
-!Assets/
-!Assets/**/
-!Assets/**/*.cs
+# 무시 항목 추가
+*.png
+*.jpg 
+*.meta 
+*.fbx 
+*.obj 
+*.mp4 
+*.mov
+*.wab 
+*.ogg
 
-# ProjectSettings도 포함
+# Unity 필수 설정 포함
 !ProjectSettings/
 !ProjectSettings/**
+!Packages/
+!Packages/**

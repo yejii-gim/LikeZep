@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|c:\\users\\yejigim\\documents\\github\\likezep2\\likezep\\assets\\scripts\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\stathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StatHandler.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\StatHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StatHandler.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\StatHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StatHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:09:30.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\AnimationHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AnimationHandler.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\AnimationHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AnimationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:34:45.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAA+wDkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:45:46.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\BaseController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BaseController.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\BaseController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BaseController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:13:30.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

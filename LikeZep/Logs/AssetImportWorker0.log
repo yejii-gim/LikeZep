@@ -1,0 +1,1095 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.17f1 (4fc78088f837) revision 5228416'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 16092 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/YEJIGIM/Documents/GitHub/LikeZep2/LikeZep
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52517
+Successfully changed project path to: C:/Users/YEJIGIM/Documents/GitHub/LikeZep2/LikeZep
+C:/Users/YEJIGIM/Documents/GitHub/LikeZep2/LikeZep
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23940] Host "[IP] 192.168.0.9 [Port] 0 [Flags] 2 [Guid] 3802841354 [EditorId] 3802841354 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HK82EG9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23940] Host "[IP] 192.168.0.9 [Port] 0 [Flags] 2 [Guid] 3802841354 [EditorId] 3802841354 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HK82EG9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 37.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/YEJIGIM/Documents/GitHub/LikeZep2/LikeZep/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     8046 MB
+    Driver:   30.0.100.9836
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.025507 seconds.
+- Loaded All Assemblies, in  0.631 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.419 seconds
+Domain Reload Profiling: 1043ms
+	BeginReloadAssembly (212ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (117ms)
+	LoadAllAssembliesAndSetupDomain (218ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (211ms)
+				TypeCache.ScanAssembly (195ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (419ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.180 seconds
+Refreshing native plugins compatible for Editor in 16.00 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.927 seconds
+Domain Reload Profiling: 2091ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (822ms)
+		LoadAssemblies (704ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (255ms)
+			TypeCache.Refresh (220ms)
+				TypeCache.ScanAssembly (197ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (928ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (730ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 14.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4030 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (244.4 KB). Loaded Objects now: 4489.
+Memory consumption went from 145.2 MB to 144.9 MB.
+Total: 5.670500 ms (FindLiveObjects: 0.327200 ms CreateObjectMapping: 0.202900 ms MarkObjects: 4.598300 ms  DeleteObjects: 0.540600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1798930.840256 seconds.
+  path: Assets/Resources/Art Room/Art Room Spritesheet 1.png
+  artifactKey: Guid(39014d7e14ae0ac4399a7bd56253f399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room/Art Room Spritesheet 1.png using Guid(39014d7e14ae0ac4399a7bd56253f399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9909c925c5f3b76b946cb86daed1f0d9') in 0.096215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Art Room/Art Room Spritesheet 8.png
+  artifactKey: Guid(de9236fbf32673b44aa2953243565466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room/Art Room Spritesheet 8.png using Guid(de9236fbf32673b44aa2953243565466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b245b7a41cedb17479c4506a78a2f1f8') in 0.149043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Art Room/Art Room Spritesheet 4.png
+  artifactKey: Guid(cb59be68fd8b1d44f8917bbb08469120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room/Art Room Spritesheet 4.png using Guid(cb59be68fd8b1d44f8917bbb08469120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99419d7b18f46a6db8cd5c157a42784b') in 0.060122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Resources/Art Room/Art Room Spritesheet 5.png
+  artifactKey: Guid(86d6128bfa70c724eafbab2842710957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room/Art Room Spritesheet 5.png using Guid(86d6128bfa70c724eafbab2842710957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7393c801c9e36cad97759ec356099a') in 0.055447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.390757 seconds.
+  path: Assets/Resources/Art Room/Art Room Spritesheet 1.png
+  artifactKey: Guid(39014d7e14ae0ac4399a7bd56253f399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room/Art Room Spritesheet 1.png using Guid(39014d7e14ae0ac4399a7bd56253f399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96edfb0a458d3b052bbe1e9b2ba52089') in 0.184813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 9.992405 seconds.
+  path: Assets/Resources/Cafeteria
+  artifactKey: Guid(bb415a8ab282fc94288afe28a365b759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria using Guid(bb415a8ab282fc94288afe28a365b759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1a42baf8740d0bb47642b4824e79a0') in 0.001273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.032954 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png
+  artifactKey: Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png using Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8993db3d7af5d7a6010ec59ef35c316') in 0.067238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 1.png
+  artifactKey: Guid(1bcb59943c5fcb34c9697feaed2c65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 1.png using Guid(1bcb59943c5fcb34c9697feaed2c65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ec8cd916ac4ec238908170f837e429') in 0.061374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 4.png
+  artifactKey: Guid(b24b88c9a2e538042887badaee0268a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 4.png using Guid(b24b88c9a2e538042887badaee0268a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66934fb82591f91e55f7fc9435ba1fa') in 0.060442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 6.png
+  artifactKey: Guid(7a716b40558ade448804cec60ce086ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 6.png using Guid(7a716b40558ade448804cec60ce086ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d56f9892611ded770ee6bdd6ba8e89e') in 0.056535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 7.png
+  artifactKey: Guid(e9f60ed4504d71f4296432058e92b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 7.png using Guid(e9f60ed4504d71f4296432058e92b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f592e090cc1459a5eb2a60f678cbf945') in 0.061825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria First Spritesheet 4.png
+  artifactKey: Guid(1d4d3537d69b3024ebba595fc6d4bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria First Spritesheet 4.png using Guid(1d4d3537d69b3024ebba595fc6d4bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd3be28b21ae956232414aef742cf26') in 0.062579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 2.png
+  artifactKey: Guid(5d9318687c594a945bdf639f783d2004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 2.png using Guid(5d9318687c594a945bdf639f783d2004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021d20dbd494244c8538d9a9a2560d4e') in 0.060483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria First Spritesheet 7.png
+  artifactKey: Guid(603787717c456ad46aacb8e6a81854fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria First Spritesheet 7.png using Guid(603787717c456ad46aacb8e6a81854fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e3338c40718f525da3f793e4424e9b') in 0.065204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.021510 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png
+  artifactKey: Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png using Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a8edb56a91340144485b05ab953d98') in 0.044392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.741475 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png
+  artifactKey: Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria First Spritesheet 1.png using Guid(3f84ff394ecf5a746924a0fbec2f7f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b696b2a7c2df184b63f4122b000f84b') in 0.091627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 2.167617 seconds.
+  path: Assets/Resources/Chemistry lab
+  artifactKey: Guid(3615f81f0ca4f1b4cb87e667baedfdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab using Guid(3615f81f0ca4f1b4cb87e667baedfdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45146df7c67e6b92325e2e7983bfcd6') in 0.000840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.035001 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 1.png
+  artifactKey: Guid(b0d36a0531e165a4ebb945639705c338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 1.png using Guid(b0d36a0531e165a4ebb945639705c338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acd404cc1c91292e46f75d65f42a231') in 0.061687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 8.png
+  artifactKey: Guid(9c3001ad4e74b3f4ca6b1dc0591cfcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 8.png using Guid(9c3001ad4e74b3f4ca6b1dc0591cfcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3b609b7dfe50bbab006442ac2f6917') in 0.057556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 6.png
+  artifactKey: Guid(4aae8cab7403ee34c8187fd7094063a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 6.png using Guid(4aae8cab7403ee34c8187fd7094063a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e9c2f7b3e50bf36daf480d23f8af56') in 0.053852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 8.png
+  artifactKey: Guid(618bd16461aa38946891ee4411087211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 8.png using Guid(618bd16461aa38946891ee4411087211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a92f45c95c7756a44e23b6a67196d10') in 0.057384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 4.png
+  artifactKey: Guid(399f80d9dc16a304ca53a972fb9b5234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 4.png using Guid(399f80d9dc16a304ca53a972fb9b5234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2340ab0722d9c8d381fc6e3b55e85fb3') in 0.057544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 3.png
+  artifactKey: Guid(eda05ebeb90d5aa40945f47606528ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 3.png using Guid(eda05ebeb90d5aa40945f47606528ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3d78a46a3f3857594d7f3479035286') in 0.056510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 2.png
+  artifactKey: Guid(ce637d2dfc9c5e44e9c7444be6a7c81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab Second Spritesheet 2.png using Guid(ce637d2dfc9c5e44e9c7444be6a7c81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91e149df08fff6cb9438ade4b25701a') in 0.056789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 6.png
+  artifactKey: Guid(f6d85ee984bec034bb6511039afcc267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Chemistry lab/Chemistry Lab First Spritesheet 6.png using Guid(f6d85ee984bec034bb6511039afcc267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92cc08b52361f112304621b9fb8749ae') in 0.057472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 20.718697 seconds.
+  path: Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 1.png
+  artifactKey: Guid(1bcb59943c5fcb34c9697feaed2c65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cafeteria/Cafeteria Second Spritesheet 1.png using Guid(1bcb59943c5fcb34c9697feaed2c65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6835a16e12c0ac6047f89e1cf461ab31') in 0.045358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.418320 seconds.
+  path: Assets/Resources/Classroom
+  artifactKey: Guid(29beb116ba978874882571ba2672c76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom using Guid(29beb116ba978874882571ba2672c76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80580596a38d931b60fddaaf52e407a1') in 0.000934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.034637 seconds.
+  path: Assets/Resources/Classroom/Classroom First Spritesheet 1.png
+  artifactKey: Guid(c6c3200224e406f46a2fa032cdc0439a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom First Spritesheet 1.png using Guid(c6c3200224e406f46a2fa032cdc0439a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3794de84eb2a190fdb2412a7b03c3614') in 0.072488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Classroom/Classroom Second Spritesheet 6.png
+  artifactKey: Guid(780f1461ac197874db9181cda98e4dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom Second Spritesheet 6.png using Guid(780f1461ac197874db9181cda98e4dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecacd604ecb618fb6e13e8187d2f8008') in 0.061602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Classroom/Classroom Second Spritesheet 5.png
+  artifactKey: Guid(2278dea2caba25442b11fa9c1e8f79ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom Second Spritesheet 5.png using Guid(2278dea2caba25442b11fa9c1e8f79ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4af7fdf02fbd2bf311fca7e2c74e580') in 0.057664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Resources/Classroom/Classroom Second Spritesheet 4.png
+  artifactKey: Guid(3c1f36f9b8c840a47ab712dab5a18172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom Second Spritesheet 4.png using Guid(3c1f36f9b8c840a47ab712dab5a18172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7c34f231730004d96462e3ff5e1cf7') in 0.052407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/Classroom/Classroom First Spritesheet 8.png
+  artifactKey: Guid(ed25f780ace5a354185b83c42edb2284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom First Spritesheet 8.png using Guid(ed25f780ace5a354185b83c42edb2284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0617a561d7214f22010d3d521916baae') in 0.055512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Classroom/Classroom Second Spritesheet 7.png
+  artifactKey: Guid(776c112ae03cda245aa76f62c12e2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom Second Spritesheet 7.png using Guid(776c112ae03cda245aa76f62c12e2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f474cb20c74bbfc50d6eadbe590921b') in 0.051792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Classroom/Classroom Second Spritesheet 1.png
+  artifactKey: Guid(f3f83c5817cf5f34ea30bb3b330d2171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom Second Spritesheet 1.png using Guid(f3f83c5817cf5f34ea30bb3b330d2171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c73dcbd7492d198270a2c049d68be42') in 0.062782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Classroom/Classroom First Spritesheet 6.png
+  artifactKey: Guid(a11334f6f434d6e45ac8b2c88fa9e55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom/Classroom First Spritesheet 6.png using Guid(a11334f6f434d6e45ac8b2c88fa9e55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8ea142b2beff0c8d3221eff5cddbf5') in 0.058356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.625170 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling
+  artifactKey: Guid(8aac2d17d10d3c249bd280d94991461a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling using Guid(8aac2d17d10d3c249bd280d94991461a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d0f6e6680b8870961b2dc62e5480c9') in 0.001235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.034534 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20121.png
+  artifactKey: Guid(fc18642c8bf94374f8bdbcd5b5de0410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20121.png using Guid(fc18642c8bf94374f8bdbcd5b5de0410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba1a5f67dc6d7ad9df5b2e03346fda6') in 0.060538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20133.png
+  artifactKey: Guid(0d27155538f2a294a9943fc91b2ba9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20133.png using Guid(0d27155538f2a294a9943fc91b2ba9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f694fd78c3c58179ee1dab519ffc9e93') in 0.051485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20128.png
+  artifactKey: Guid(312f571c29d238c4b951cb66d315fd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20128.png using Guid(312f571c29d238c4b951cb66d315fd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97da23a36854214066479fc5a2b04df3') in 0.051497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20136.png
+  artifactKey: Guid(be9c6ce8317ac1a4db4e9c29832dd37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20136.png using Guid(be9c6ce8317ac1a4db4e9c29832dd37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa8a589c8d369cf3d30f6e716467171') in 0.051609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20124.png
+  artifactKey: Guid(165b4ed892f4e5f4e83fd741995e2b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20124.png using Guid(165b4ed892f4e5f4e83fd741995e2b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91cf113aeee06837f360a84907f4899') in 0.053781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20125.png
+  artifactKey: Guid(d7fb495d44a74284986f70c8c06df5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20125.png using Guid(d7fb495d44a74284986f70c8c06df5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a380186f3aae1e57dbcfd507a8c6161') in 0.069321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20135.png
+  artifactKey: Guid(f6ae0d16e5c864e4f94e4aa7a1ac2443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20135.png using Guid(f6ae0d16e5c864e4f94e4aa7a1ac2443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe354949e1d306609549b235e528591') in 0.057118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20132.png
+  artifactKey: Guid(2984ade567aacc849a65b094d32ca5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoor second version tiling/strokespritesheet20132.png using Guid(2984ade567aacc849a65b094d32ca5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d96d0206ed4e154dcbb15cd8112bdec') in 0.052668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.411817 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke
+  artifactKey: Guid(639c411299c88be4b9cd50e8cf2b43a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke using Guid(639c411299c88be4b9cd50e8cf2b43a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c397053e6ec4b2e986a9ca978e8a2d') in 0.001096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.033730 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png
+  artifactKey: Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png using Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e0b981077a29d3667a942386c1e66b') in 0.070595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+  artifactKey: Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png using Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37f46ebb4cdc364c95c407d613d8dd9') in 0.056720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 4.png
+  artifactKey: Guid(3d91d6ceefc616542a58f103174c3741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 4.png using Guid(3d91d6ceefc616542a58f103174c3741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8ab90cbf1308149bb17eb92be1ea53') in 0.055163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 8.png
+  artifactKey: Guid(c62207955c657c044a5cb3fca3c57bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 8.png using Guid(c62207955c657c044a5cb3fca3c57bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3893557664ad760d70cefcc07f0ee06e') in 0.057477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 8.png
+  artifactKey: Guid(298ae9b27ee1a084ba71acfb69eb97cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 8.png using Guid(298ae9b27ee1a084ba71acfb69eb97cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a724eb8b9706320dff83d33cee609fd8') in 0.062737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 6.png
+  artifactKey: Guid(1e6a4c4e94e269d439ce64ffddd48d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 6.png using Guid(1e6a4c4e94e269d439ce64ffddd48d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e89202e9972c6135f2ef65ea86c14f52') in 0.057033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 3.png
+  artifactKey: Guid(d8ab9541613a6594e940f86964132302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/WallFloorDoorW second spritesheet 3.png using Guid(d8ab9541613a6594e940f86964132302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9471aa7072ea3fd5cbfed6949c858436') in 0.061027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 5.png
+  artifactKey: Guid(fa9124b4f80c18a44a9510f7244a8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 5.png using Guid(fa9124b4f80c18a44a9510f7244a8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e92289b9ebdcbaff036c0f55a84ebb1') in 0.055235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.716566 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png
+  artifactKey: Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png using Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f9d6f025486e5190422d53aac84cbc') in 0.046958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.828558 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png
+  artifactKey: Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png using Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a43b5df0a5bf7b03145bca05ee2a96') in 0.084184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 25.103151 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png
+  artifactKey: Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png using Guid(4f389b5c4317c6345b9cc8a8315552a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df55f885f5f673746e04446f9db1f24') in 0.077489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 321.143486 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+  artifactKey: Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png using Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecc93231088af2ac2625f8856843ec1') in 0.048498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.549498 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+  artifactKey: Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png using Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e177f152ee378c725bcd0853ecef30') in 0.080030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 41.888738 seconds.
+  path: Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+  artifactKey: Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png using Guid(dbc211aab760bcc48b809a7e7558ce1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2a0147c79195b4c1794795762c1633') in 0.076708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 77.989492 seconds.
+  path: Assets/Resources/Computer Room
+  artifactKey: Guid(cbd86ad04ee39954c9e1752861fab83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Computer Room using Guid(cbd86ad04ee39954c9e1752861fab83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6616c877830c9c3192208150b97c7eaa') in 0.001238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.033509 seconds.
+  path: Assets/Resources/Computer Room/Computer Room Spritesheet 1.png
+  artifactKey: Guid(bdd3477320feecc4fa2c4b622a72e58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Computer Room/Computer Room Spritesheet 1.png using Guid(bdd3477320feecc4fa2c4b622a72e58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e1ea0f6336829a3e516e63db7256f6') in 0.068543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Computer Room/Computer Room Spritesheet 8.png
+  artifactKey: Guid(02498f89b969ef44d8eca874c0227c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Computer Room/Computer Room Spritesheet 8.png using Guid(02498f89b969ef44d8eca874c0227c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745140480e2aad29f42f2af7e4771e4f') in 0.052784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Computer Room/Computer Room Spritesheet 7.png
+  artifactKey: Guid(bdc64c595e8f2e64d884b881a6b836b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Computer Room/Computer Room Spritesheet 7.png using Guid(bdc64c595e8f2e64d884b881a6b836b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4585e0f349b2c40306120394fd26e670') in 0.055056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/Computer Room/Computer Room Spritesheet 5.png
+  artifactKey: Guid(27b51e3209410874b93b395d22aa4e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Computer Room/Computer Room Spritesheet 5.png using Guid(27b51e3209410874b93b395d22aa4e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdaad2ed170c586a9ac91e56d7934ef9') in 0.057186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.258888 seconds.
+  path: Assets/Resources/Classroom 2 Props
+  artifactKey: Guid(9666aa32dc2157244a940524ad664ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props using Guid(9666aa32dc2157244a940524ad664ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10439dec3f1a0e6d36a5eb55932bf1a5') in 0.001881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.033663 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png
+  artifactKey: Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png using Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de5953d3fe17d211c3b6863d1cc62df') in 0.064342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png
+  artifactKey: Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png using Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d547394772a350a16bb67b9a7413dce') in 0.053584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 3.png
+  artifactKey: Guid(73591f3e6cf972f4db8e5e1567d7805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 3.png using Guid(73591f3e6cf972f4db8e5e1567d7805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565ad95a25cf4becf471ac0bde672383') in 0.059461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 4.png
+  artifactKey: Guid(76aa16c11307b3d4f842b70a3f14d530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 4.png using Guid(76aa16c11307b3d4f842b70a3f14d530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5e5b1b18d7dc861e1eff4bb5b3f247') in 0.055164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 1.png
+  artifactKey: Guid(9f1227c543601864b9da957758cde691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 1.png using Guid(9f1227c543601864b9da957758cde691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd914094519f343db7b33d44d5a1f4b18') in 0.061250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 4.png
+  artifactKey: Guid(e44643b590b07b6448ca190448e942f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props Second Spritesheet 4.png using Guid(e44643b590b07b6448ca190448e942f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51a5e92f0ea8f3a8bce237a70289148') in 0.056189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png
+  artifactKey: Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png using Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893e17b8b01ba5a212480e458cf772cc') in 0.061751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 8.png
+  artifactKey: Guid(4a85272aabb1e3f439f09765d8d56109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 8.png using Guid(4a85272aabb1e3f439f09765d8d56109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0e11cb93ece357313439e2aa4dfc27') in 0.057320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 48.329746 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png
+  artifactKey: Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png using Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a7bcad5ec42b2a5d20b913c1596032') in 0.045057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.894460 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png
+  artifactKey: Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png using Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4251027ed703453734644b7aaeecd02f') in 0.054038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.849982 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png
+  artifactKey: Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png using Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17371b90fb1b601188e70a44fa0df9fb') in 0.045505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.453056 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png
+  artifactKey: Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png using Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879ab5310709bfb2b4eee4cb28757758') in 0.105513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 7.724096 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png
+  artifactKey: Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png using Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fae1e16c71b9f72f293027354265dac') in 0.083539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 3.048544 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png
+  artifactKey: Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png using Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553492d9a764451312e116505dfd4aa0') in 0.091710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 17.105446 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png
+  artifactKey: Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 1.png using Guid(f8a59e92c665cbd4a904f4c640a27b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47c0e85907d8f16ecf735dbe43810d3') in 0.088777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 17.199586 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png
+  artifactKey: Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 5.png using Guid(08d5cd8d9a433c6409eaf8e425772400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1eec158173d0ce8cc4aabcd91940d4') in 0.093417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 246.920697 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png
+  artifactKey: Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png using Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab71dc6a6305dd3488b8e7db5bed664') in 0.059323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.997034 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png
+  artifactKey: Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png using Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977c8eeb441a9f8a5efe90e39be66369') in 0.044005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.501375 seconds.
+  path: Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png
+  artifactKey: Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Classroom 2 Props/Classroom Props First Spritesheet 3.png using Guid(0dc30b79aecbd9b4cb9d2cd29dda4ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c4ae4a11c5560b69c647e5743e9c40') in 0.092379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.967 seconds
+Refreshing native plugins compatible for Editor in 51.83 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.175 seconds
+Domain Reload Profiling: 4139ms
+	BeginReloadAssembly (256ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (585ms)
+		LoadAssemblies (588ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (85ms)
+	FinalizeReload (3176ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (885ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (212ms)
+			ProcessInitializeOnLoadAttributes (567ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 20.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4024 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (216.6 KB). Loaded Objects now: 4650.
+Memory consumption went from 150.2 MB to 150.0 MB.
+Total: 4.865300 ms (FindLiveObjects: 0.364700 ms CreateObjectMapping: 0.170700 ms MarkObjects: 4.031500 ms  DeleteObjects: 0.296600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.816 seconds
+Refreshing native plugins compatible for Editor in 13.61 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.688 seconds
+Domain Reload Profiling: 3491ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (435ms)
+		LoadAssemblies (564ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (2689ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (886ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (231ms)
+			ProcessInitializeOnLoadAttributes (544ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (41ms)
+Refreshing native plugins compatible for Editor in 17.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4025 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (216.9 KB). Loaded Objects now: 4654.
+Memory consumption went from 152.4 MB to 152.1 MB.
+Total: 3.954100 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.147900 ms MarkObjects: 3.244400 ms  DeleteObjects: 0.247100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.849 seconds
+Refreshing native plugins compatible for Editor in 19.09 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.460 seconds
+Domain Reload Profiling: 3298ms
+	BeginReloadAssembly (243ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (476ms)
+		LoadAssemblies (593ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2460ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (817ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (523ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 15.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4025 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (217.2 KB). Loaded Objects now: 4658.
+Memory consumption went from 154.3 MB to 154.1 MB.
+Total: 4.642100 ms (FindLiveObjects: 0.417000 ms CreateObjectMapping: 0.292500 ms MarkObjects: 3.380700 ms  DeleteObjects: 0.550600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 561.191528 seconds.
+  path: Assets/Resources/Art Room
+  artifactKey: Guid(01e3321ff069c9c4d95d93fec1282baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Art Room using Guid(01e3321ff069c9c4d95d93fec1282baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1aa80f16cba178c229b0460961be9d4') in 0.005999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.638053 seconds.
+  path: Assets/Resources/Toilet
+  artifactKey: Guid(3c3a189bf076ab643a7d2442786999a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Toilet using Guid(3c3a189bf076ab643a7d2442786999a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac93d23abd96fae27f1b2a492d3c240') in 0.001073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.036758 seconds.
+  path: Assets/Resources/Toilet/Toilet Spritesheet 1.png
+  artifactKey: Guid(9b5c7f5b76e67f843961e7c4d9780e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Toilet/Toilet Spritesheet 1.png using Guid(9b5c7f5b76e67f843961e7c4d9780e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36777ac42410e4abfc9961be984b112c') in 0.133903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Toilet/Toilet Spritesheet 8.png
+  artifactKey: Guid(4467d2e8ae83ba343af007a170438924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Toilet/Toilet Spritesheet 8.png using Guid(4467d2e8ae83ba343af007a170438924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34753f266d8c49805e34efccadc0eda') in 0.054536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Resources/Toilet/Toilet Spritesheet 5.png
+  artifactKey: Guid(1548a92a9ddbff3499c49a7efb5bb64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Toilet/Toilet Spritesheet 5.png using Guid(1548a92a9ddbff3499c49a7efb5bb64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca92c4e422a3260488e5cc9a11258a5') in 0.056588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Toilet/Toilet Spritesheet 3.png
+  artifactKey: Guid(337af4b1af7c5b043ba9cc190f67c7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Toilet/Toilet Spritesheet 3.png using Guid(337af4b1af7c5b043ba9cc190f67c7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da4181a9282a43a8efa918df6d33f7e') in 0.055743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
