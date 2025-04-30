@@ -1,8 +1,11 @@
-# 전부 무시
+# 모든 파일 무시
 *
 
-# 예외: 스크립트만 포함
+# Assets 폴더 및 하위 폴더 포함
 !Assets/
-Assets/*
+!Assets/**/
 !Assets/**/*.cs
-!Assets/**/*.cs.meta
+
+# ProjectSettings도 포함
+!ProjectSettings/
+!ProjectSettings/**
