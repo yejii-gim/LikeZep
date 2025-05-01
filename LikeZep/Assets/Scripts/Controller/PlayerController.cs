@@ -55,7 +55,7 @@ public class PlayerController : BaseController
 
     protected override void FixedUpdate()
     {
-        base.FixedUpdate();
+        Movement(movementDirection);
     }
     public void Init(GameManager gameManager)
     {
@@ -126,10 +126,16 @@ public class PlayerController : BaseController
                 var npcName = currentNPC.name;
                 line = DialogueManager.Instance.dialogueLines.Find(d => d.npcName == npcName);  
                 npc.DialoguePanel.SetActive(true);
-                if (!line.isQuest) ItemManager.Instance.SpawnChest();
+                if (!line.isQuest)
+                {
+                    ItemManager.Instance.SpawnChest();
+                    line.isQuest = true;
+                }
+                
                 if(isItem)
                 {
                     currentNPC.NPCCompleted();
+                    isItem = false;
                 }
             }
         }

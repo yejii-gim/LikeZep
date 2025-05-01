@@ -20,20 +20,28 @@ public class NPCController : BaseController
     private float changeTime = 5f;
     private float nextChangeTime;
     private bool isStabbed = false;
-    protected override void Start()
+    private bool isActive = false;
+    private void Awake()
     {
-        PickNewDirection();
+        base.Awake();
+        NPCManager.Instance.RegisterNPC(this);
     }
     protected override void FixedUpdate()
     {
+        if (!isActive) return;
         if (!isStabbed)
             Movement(movementDirection);
         else
             animationHandler.Stop();
     }
+    public void Activate()
+    {
+        isActive = true;
+        PickNewDirection();
+    }
     protected override void HandleAction()
     {
-        if (isStabbed) return;
+        if (!isActive || isStabbed) return;
         // Collision Layer 오브젝트에 부딪혔을 경우 혹은 일정 시간 경과시 방향 전환
         if (Time.time >= nextChangeTime || IsBlocked())
         {
@@ -102,6 +110,7 @@ public class NPCController : BaseController
 
     public void NPCCompleted()
     {
+        NPCManager.Instance.NotifyNPCCompleted(this);
         UIManager.Instance.ClearItemSlot();
         Destroy(gameObject,1);
     }

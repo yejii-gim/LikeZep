@@ -20,7 +20,15 @@ public class BaseController : MonoBehaviour
     {
         characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _rd = GetComponent<Rigidbody2D>();
+        if (animationHandler == null)
+        {
+            _rd = GetComponentInChildren<Rigidbody2D>();
+        }
         animationHandler = GetComponentInChildren<AnimationHandler>();
+        if (animationHandler == null)
+        {
+            animationHandler = GetComponent<AnimationHandler>();
+        }
     }
 
     protected virtual void Start()
@@ -36,7 +44,7 @@ public class BaseController : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        Movement(movementDirection);
+        //Movement(movementDirection);
     }
 
     protected virtual void HandleAction()
@@ -45,7 +53,13 @@ public class BaseController : MonoBehaviour
 
     protected void Movement(Vector2 direction)
     {
+        Debug.Log($"_rd: {_rd}, animationHandler: {animationHandler}, moveSpeed: {moveSpeed}");
         direction = direction * moveSpeed;
+        if (_rd == null)
+            Debug.LogError("Rigidbody2D (_rd) is NULL!");
+
+        if (animationHandler == null)
+            Debug.LogError("AnimationHandler is NULL!");
         _rd.velocity = direction;
         animationHandler.Move(direction);
  
