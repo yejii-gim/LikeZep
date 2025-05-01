@@ -28,9 +28,11 @@ public class ItemController : MonoBehaviour
         }
     }
 
+    // 보물상자 열었을때 1초뒤에 삭제
     public void OpenChest()
     {
         //animationHandler.Open(); // 예: 열리는 애니메이션
         Destroy(gameObject, 1f); // 1초 후 제거
+        UIManager.Instance.CoinSpawn(this.transform);
     }
 }

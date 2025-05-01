@@ -16,14 +16,18 @@ public class NPCController : BaseController
     public GameObject TalkPanel{get => talkPanel;}
     public GameObject DialoguePanel { get => dialoguePanel;  }
     public TextMeshProUGUI MessageText { get => messageText; }
+
     private float changeTime = 5f;
     private float nextChangeTime;
     private bool isStabbed = false;
     private bool isActive = false;
+    private void Start()
+    {
+        NPCManager.Instance.RegisterNPC(this);
+    }
     private void Awake()
     {
         base.Awake();
-        NPCManager.Instance.RegisterNPC(this);
     }
     protected override void FixedUpdate()
     {
@@ -107,6 +111,7 @@ public class NPCController : BaseController
         }
     }
 
+    // 퀘스트 완료시 npc 삭제
     public void NPCCompleted()
     {
         NPCManager.Instance.NotifyNPCCompleted(this);

@@ -16,6 +16,5 @@ public class GameManager : BaseManager<GameManager>
     private void Awake()
     {
         Instance = this;
-        //DialogueManager.Instance.Init();
     }
 }

@@ -21,14 +21,12 @@ public class PlayerController : BaseController
 
     private NPCController currentNPC;
     private ItemController currentItem;
-    private GameManager gameManager;
     private Camera mainCamera;
     private float lastFireTime;
     private Vector3 startPos;
     private float timer;
     private bool isJumping;
     DialogueLine line;
-    GameObject item;
     bool isItem = false;
     protected override void Update()
     {
@@ -60,12 +58,7 @@ public class PlayerController : BaseController
     {
         Movement(movementDirection);
     }
-    public void Init(GameManager gameManager)
-    {
-        mainCamera = Camera.main;
-        this.gameManager = gameManager;
 
-    }
     protected override void HandleAction()
     {
         // 키보드 입력을 통해 이동 방향 계산 (좌/우/상/하)
@@ -132,6 +125,7 @@ public class PlayerController : BaseController
                 if (!line.isQuest)
                 {
                     ItemManager.Instance.SpawnChest();
+                    line.isQuest = true;
                 }
                 else
                 {
@@ -152,6 +146,11 @@ public class PlayerController : BaseController
             isItem = true;
 
         }
+        if (collision.CompareTag("Coin"))
+        {
+            UIManager.coinCount++;
+            UIManager.Instance.CoinUpdate();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -164,8 +163,11 @@ public class PlayerController : BaseController
                 npc.DialoguePanel.SetActive(false);
                 DialogueManager.Instance.HideDialogue(npc.DialoguePanel);
                 currentNPC = null;
-                line.isQuest = true;
             }
+        }
+        if (collision.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 

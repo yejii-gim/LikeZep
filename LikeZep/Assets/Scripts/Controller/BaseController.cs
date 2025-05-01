@@ -53,13 +53,7 @@ public class BaseController : MonoBehaviour
 
     protected void Movement(Vector2 direction)
     {
-        Debug.Log($"_rd: {_rd}, animationHandler: {animationHandler}, moveSpeed: {moveSpeed}");
         direction = direction * moveSpeed;
-        if (_rd == null)
-            Debug.LogError("Rigidbody2D (_rd) is NULL!");
-
-        if (animationHandler == null)
-            Debug.LogError("AnimationHandler is NULL!");
         _rd.velocity = direction;
         animationHandler.Move(direction);
  

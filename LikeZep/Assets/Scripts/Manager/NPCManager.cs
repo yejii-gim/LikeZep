@@ -35,6 +35,7 @@ public class NPCManager : BaseManager<NPCManager>
         }
     }
 
+    // NPC µî·Ï
     public void RegisterNPC(NPCController npc)
     {
         npcs.Add(npc);

@@ -14,7 +14,7 @@ public class ItemManager : BaseManager<GameManager>
         Instance = this;
     }
 
-    // 랜덤으로 아이템 들은 보물상자 나오게x 
+    // 랜덤한 위치에 아이템 들은 보물상자 나오게
     public void SpawnChest()
     {
         Vector2 randomPos = new Vector2(Random.Range(spawnAreaMin.x, spawnAreaMax.x),Random.Range(spawnAreaMin.y, spawnAreaMax.y) );
