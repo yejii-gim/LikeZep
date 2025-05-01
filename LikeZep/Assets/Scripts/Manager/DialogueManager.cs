@@ -9,6 +9,7 @@ public class DialogueManager : BaseManager<DialogueManager>
     public static DialogueManager Instance;
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
     private float typingspeed = 0.1f;
+    private Coroutine typingCoroutine;
     private void Awake()
     {
         Instance = this;
@@ -39,11 +40,23 @@ public class DialogueManager : BaseManager<DialogueManager>
     public void ShowDialogue(GameObject dialoguePanel, TextMeshProUGUI messageText, string message)
     {
         dialoguePanel.SetActive(true);
-        StartCoroutine(TypingText(dialoguePanel, messageText, message));
+
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+
+        typingCoroutine = StartCoroutine(TypingText(dialoguePanel, messageText, message));
     }
 
     public void HideDialogue(GameObject dialoguePanel)
     {
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
+
         if (dialoguePanel != null)
         {
             dialoguePanel.SetActive(false);

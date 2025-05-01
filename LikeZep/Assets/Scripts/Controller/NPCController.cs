@@ -13,10 +13,9 @@ public class NPCController : BaseController
     [SerializeField] private GameObject talkPanel;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI messageText;
-
-    public GameObject TalkPanel => talkPanel;
-    public GameObject DialoguePanel => dialoguePanel;
-    public TextMeshProUGUI MessageText => messageText;
+    public GameObject TalkPanel{get => talkPanel;}
+    public GameObject DialoguePanel { get => dialoguePanel;  }
+    public TextMeshProUGUI MessageText { get => messageText; }
     private float changeTime = 5f;
     private float nextChangeTime;
     private bool isStabbed = false;

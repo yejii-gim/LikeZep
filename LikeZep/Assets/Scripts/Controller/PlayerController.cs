@@ -44,7 +44,10 @@ public class PlayerController : BaseController
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (!isItem)
-                DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuest ? line.isQuesting : line.firstMeeting);
+            {
+                DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.firstMeeting);
+                line.isQuest = true;
+            }
             else
             {
                 UIManager.Instance.ChangeItemSlot(currentItem.Item);
@@ -129,10 +132,12 @@ public class PlayerController : BaseController
                 if (!line.isQuest)
                 {
                     ItemManager.Instance.SpawnChest();
-                    line.isQuest = true;
                 }
-                
-                if(isItem)
+                else
+                {
+                    DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuesting);
+                }
+                if (isItem)
                 {
                     currentNPC.NPCCompleted();
                     isItem = false;
