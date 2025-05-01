@@ -13,7 +13,6 @@ public class PlayerController : BaseController
     [SerializeField] private float jumpHeight = 1.5f; // 점프 최대 높이
     [SerializeField] private float jumpForce = 6f; // 점프 강도
     [SerializeField] private float jumpDuration = 0.5f; // 총 점프시간
-    [SerializeField] private float moveSpeed = 2f; // 
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private int bulletIndex = 0;
     [SerializeField] private float spread = 0f;

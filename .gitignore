@@ -18,6 +18,7 @@
 *.asset
 *.fbx
 *.meta
+*.vsidx
 
 # 무시 항목 추가
 *.png

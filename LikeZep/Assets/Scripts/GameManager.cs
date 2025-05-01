@@ -10,5 +10,4 @@ public class GameManager : BaseManager<GameManager>
 
     [SerializeField] private int currentWaveIndex = 0;
 
-    private EnemyManager enemyManager;
 }
