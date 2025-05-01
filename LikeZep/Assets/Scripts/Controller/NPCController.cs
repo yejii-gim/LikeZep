@@ -97,9 +97,13 @@ public class NPCController : BaseController
         if (collision.CompareTag("Player"))
         {
             talkPanel.SetActive(false);
-            print("²¨Áø´Ù.");
         }
     }
 
+    public void NPCCompleted()
+    {
+        UIManager.Instance.ClearItemSlot();
+        Destroy(gameObject,1);
+    }
     
 }

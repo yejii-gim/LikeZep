@@ -9,9 +9,13 @@ public class GameManager : BaseManager<GameManager>
     public PlayerController player { get; private set; }
 
     [SerializeField] private int currentWaveIndex = 0;
-
-    private void Awake()
+    private void Start()
     {
         DialogueManager.Instance.Init();
+    }
+    private void Awake()
+    {
+        Instance = this;
+        //DialogueManager.Instance.Init();
     }
 }

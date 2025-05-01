@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -19,6 +20,7 @@ public class PlayerController : BaseController
     [SerializeField] private float spread = 0f;
 
     private NPCController currentNPC;
+    private ItemController currentItem;
     private GameManager gameManager;
     private Camera mainCamera;
     private float lastFireTime;
@@ -26,6 +28,8 @@ public class PlayerController : BaseController
     private float timer;
     private bool isJumping;
     DialogueLine line;
+    GameObject item;
+    bool isItem = false;
     protected override void Update()
     {
         base.Update();
@@ -39,7 +43,13 @@ public class PlayerController : BaseController
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuest ? line.isQuesting : line.firstMeeting);
+            if (!isItem)
+                DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuest ? line.isQuesting : line.firstMeeting);
+            else
+            {
+                UIManager.Instance.ChangeItemSlot(currentItem.Item);
+                currentItem.OpenChest();
+            }
         }
     }
 
@@ -116,7 +126,20 @@ public class PlayerController : BaseController
                 var npcName = currentNPC.name;
                 line = DialogueManager.Instance.dialogueLines.Find(d => d.npcName == npcName);  
                 npc.DialoguePanel.SetActive(true);
+                if (!line.isQuest) ItemManager.Instance.SpawnChest();
+                if(isItem)
+                {
+                    currentNPC.NPCCompleted();
+                }
             }
+        }
+        if(collision.CompareTag("Item"))
+        {
+            ItemController item = collision.gameObject.GetComponent<ItemController>();
+            currentItem = item; 
+
+            isItem = true;
+
         }
     }
 
