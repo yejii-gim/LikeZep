@@ -7,18 +7,19 @@ public class BaseController : MonoBehaviour
     protected Rigidbody2D _rd;
 
     [SerializeField] private SpriteRenderer characterRenderer; // 캐릭터 렌더러
+    [SerializeField] private int moveSpeed;
+    public SpriteRenderer CharacterRenderer { get { return characterRenderer; } }
     protected Vector2 movementDirection = Vector2.zero; 
     public Vector2 MovementDirection { get { return movementDirection; } }
     protected Vector2 lookDirection = Vector2.zero; 
     public Vector2 LookDirection { get { return lookDirection; } }
 
     AnimationHandler animationHandler;
-    protected StatHandler statHandler;
     
     protected virtual void Awake()
     {
+        characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _rd = GetComponent<Rigidbody2D>();
-        statHandler = GetComponent<StatHandler>();  
         animationHandler = GetComponentInChildren<AnimationHandler>();
     }
 
@@ -44,7 +45,7 @@ public class BaseController : MonoBehaviour
 
     private void Movement(Vector2 direction)
     {
-        direction = direction * statHandler.Speed;
+        direction = direction * moveSpeed;
         _rd.velocity = direction;
         animationHandler.Move(direction);
     }

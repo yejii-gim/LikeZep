@@ -100,7 +100,5 @@ public class EnemyManager : BaseManager<EnemyManager>
     public void RemoveEnemyOnDeath(EnemyController enemy)
     {
         activeEnemies.Remove(enemy);
-        if (enemySpawnComplite && activeEnemies.Count == 0)
-            gameManager.EndOfWave();
     }
 }

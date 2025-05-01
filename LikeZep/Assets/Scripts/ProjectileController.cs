@@ -60,20 +60,7 @@ public class ProjectileController : MonoBehaviour
     }
     private void DamageTarget(Collider2D collision)
     {
-        ResourceController resource = collision.GetComponent<ResourceController>();
-        if (resource != null)
-        {
-            resource.ChangeHealth(-damage);
-            if (applyKnockback)
-            {
-                BaseController controller = collision.GetComponent<BaseController>();
-                if (controller != null)
-                {
-                  //  controller.ApplyKnockBack(pivot, knockbackPower, knockbackTime);
-                }
-            }
-        }
-
+        
         DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestory);
     }
     public void Init(Vector2 dir, ProjectileMananger projectileMananger, bool isPlayer = true)

@@ -30,7 +30,7 @@ public class PlayerController : BaseController
         base.Update();
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
-            StartCoroutine(JumpRoutine());
+            StartCoroutine(Jump());
         }
     }
 
@@ -47,26 +47,14 @@ public class PlayerController : BaseController
     protected override void HandleAction()
     {
         // 키보드 입력을 통해 이동 방향 계산 (좌/우/상/하)
-        float horizontal = Input.GetAxisRaw("Horizontal"); // A/D 또는 ←/→
-        float vertical = Input.GetAxisRaw("Vertical"); // W/S 또는 ↑/↓
+        float horizontal = Input.GetAxisRaw("Horizontal"); 
+        float vertical = Input.GetAxisRaw("Vertical"); 
 
         // 방향 벡터 정규화 (대각선일 때 속도 보정)
         movementDirection = new Vector2(horizontal, vertical).normalized;
 
-        // 마우스 위치를 화면 좌표 → 월드 좌표로 변환
-        Vector2 mousePosition = Input.mousePosition;
-        Vector2 worldPos = mainCamera.ScreenToWorldPoint(mousePosition);
-        lookDirection = (worldPos - (Vector2)transform.position);
-
-        // 현재 위치로부터 마우스 위치까지의 방향 계산
-        if (lookDirection.magnitude < .9f)
-        {
-            lookDirection = Vector2.zero;
-        }
-        else
-        {
-            lookDirection = lookDirection.normalized;
-        }
+        if (movementDirection != Vector2.zero)
+            lookDirection = movementDirection;
     }
 
     private void TryShoot()
@@ -85,10 +73,9 @@ public class PlayerController : BaseController
     public override void Death()
     {
         base.Death();
-        gameManager.GameOver();
     }
 
-    private IEnumerator JumpRoutine()
+    private IEnumerator Jump()
     {
         isJumping = true;
         startPos = transform.position;
@@ -99,7 +86,6 @@ public class PlayerController : BaseController
             timer += Time.deltaTime;
             float t = timer / jumpDuration;
 
-            // 포물선 형태의 점프 곡선 (y축 위아래로만 시각 효과)
             float heightOffset = 4 * jumpHeight * t * (1 - t);
             transform.position = new Vector3(startPos.x, startPos.y + heightOffset, startPos.z);
 
