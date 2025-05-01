@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DialogueLine : MonoBehaviour
+{
+    public string npcName; // NPC이름
+    public string firstMeeting; // 첫번째 만날때
+    public string isQuesting; // 퀘스트 진행중일때
+
+
+    public bool isQuest = false;
+
+    public DialogueLine(string npcName, string firstMeeting, string isQuesting, bool isQuest)
+    {
+        this.npcName = npcName;
+        this.firstMeeting = firstMeeting;
+        this.isQuesting = isQuesting;
+        this.isQuest = isQuest;
+    }
+}

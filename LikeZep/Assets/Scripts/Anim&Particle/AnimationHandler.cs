@@ -5,7 +5,6 @@ using UnityEngine;
 public class AnimationHandler : MonoBehaviour
 {
     private static readonly int IsMoving = Animator.StringToHash("isMove");
-    private static readonly int IsDamage = Animator.StringToHash("isDamage");
 
     protected Animator animator;
 
@@ -19,14 +18,9 @@ public class AnimationHandler : MonoBehaviour
         animator.SetBool(IsMoving, obj.magnitude > 0.5f);
     }
 
-    public void Damage()
+    public void Stop()
     {
-        animator.SetBool(IsDamage, true);
-    }
-
-    public void InvincibilityEnd()
-    {
-        animator.SetBool(IsDamage, false);
+        animator.SetBool(IsMoving, false);
     }
 }
 

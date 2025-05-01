@@ -8,9 +8,7 @@ public class ProjectileController : MonoBehaviour
     [SerializeField] private float projectileDuration = 1f;
     [SerializeField] private float projectileSpeed = 10f;
     [SerializeField] private int damage = 1;
-    [SerializeField] private bool applyKnockback = false;
-    [SerializeField] private float knockbackPower = 3f;
-    [SerializeField] private float knockbackTime = 0.2f;
+
     private float currentDuration;
     private Vector2 direction;
     private bool isReady = false;
@@ -43,8 +41,7 @@ public class ProjectileController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        LayerMask levelCollisionLayer = LayerMask.GetMask("Ground", "Wall", "Level");
-        if (((1 << collision.gameObject.layer) & levelCollisionLayer) != 0)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Collision"))
         {
             DestroyProjectile(collision.ClosestPoint(transform.position) - direction * 0.2f, true);
         }
@@ -52,15 +49,9 @@ public class ProjectileController : MonoBehaviour
         {
             DamageTarget(collision);
         }
-        // 적이 쐈으면 Player를 공격
-        else if (!isPlayerProjectile && collision.gameObject.layer == LayerMask.NameToLayer("Player"))
-        {
-            DamageTarget(collision);
-        }
     }
     private void DamageTarget(Collider2D collision)
     {
-        
         DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestory);
     }
     public void Init(Vector2 dir, ProjectileMananger projectileMananger, bool isPlayer = true)
@@ -71,23 +62,10 @@ public class ProjectileController : MonoBehaviour
         isReady = true;
 
         transform.right = direction;
-
-        // 시각적 방향 보정 (필요할 때만)
-        if (pivot != null)
-        {
-            if (direction.x < 0)
-                pivot.localRotation = Quaternion.Euler(180, 0, 0);
-            else
-                pivot.localRotation = Quaternion.identity;
-        }
     }
 
     private void DestroyProjectile(Vector3 position, bool createFx)
     {
-        if(createFx)
-        {
-            projectileMananger.CreateImapctParticlesAtPosition(position);
-        }
         Destroy(gameObject);
     }
 }

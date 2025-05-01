@@ -13,23 +13,33 @@ public class PlayerController : BaseController
     [SerializeField] private float jumpHeight = 1.5f; // 점프 최대 높이
     [SerializeField] private float jumpForce = 6f; // 점프 강도
     [SerializeField] private float jumpDuration = 0.5f; // 총 점프시간
+    [Header("Bullet")]
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private int bulletIndex = 0;
     [SerializeField] private float spread = 0f;
 
-    
+    private NPCController currentNPC;
     private GameManager gameManager;
     private Camera mainCamera;
     private float lastFireTime;
     private Vector3 startPos;
     private float timer;
     private bool isJumping;
+    DialogueLine line;
     protected override void Update()
     {
         base.Update();
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
             StartCoroutine(Jump());
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            TryShoot();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuest ? line.isQuesting : line.firstMeeting);
         }
     }
 
@@ -41,13 +51,13 @@ public class PlayerController : BaseController
     {
         mainCamera = Camera.main;
         this.gameManager = gameManager;
-        
+
     }
     protected override void HandleAction()
     {
         // 키보드 입력을 통해 이동 방향 계산 (좌/우/상/하)
-        float horizontal = Input.GetAxisRaw("Horizontal"); 
-        float vertical = Input.GetAxisRaw("Vertical"); 
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
         // 방향 벡터 정규화 (대각선일 때 속도 보정)
         movementDirection = new Vector2(horizontal, vertical).normalized;
@@ -58,12 +68,12 @@ public class PlayerController : BaseController
 
     private void TryShoot()
     {
-        if (Input.GetKey(KeyCode.Space) && Time.time >= lastFireTime + fireRate)
+        if (Time.time >= lastFireTime + fireRate)
         {
             if (lookDirection != Vector2.zero)
             {
                 Vector2 direction = lookDirection.normalized;
-                ProjectileMananger.Instance.ShootBullet(bulletIndex, this.transform.position, direction,true);
+                ProjectileMananger.Instance.ShootBullet(bulletIndex, this.transform.position, direction, true);
                 lastFireTime = Time.time;
             }
         }
@@ -94,4 +104,35 @@ public class PlayerController : BaseController
         transform.position = startPos;
         isJumping = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("NPC"))
+        {
+            NPCController npc = collision.GetComponentInParent<NPCController>();
+            if (npc != null)
+            {
+                currentNPC = npc;
+                var npcName = currentNPC.name;
+                line = DialogueManager.Instance.dialogueLines.Find(d => d.npcName == npcName);  
+                npc.DialoguePanel.SetActive(true);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("NPC"))
+        {
+            NPCController npc = collision.GetComponentInParent<NPCController>();
+            if (npc == currentNPC)
+            {
+                npc.DialoguePanel.SetActive(false);
+                DialogueManager.Instance.HideDialogue(npc.DialoguePanel);
+                currentNPC = null;
+                line.isQuest = true;
+            }
+        }
+    }
+
 }

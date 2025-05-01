@@ -1,25 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
 public class NPCController : BaseController
 {
     [SerializeField] private LayerMask collisionLayer;
     [SerializeField] private string myStabTag;
+    [Header("Dialogue")]
+    [SerializeField] private GameObject talkPanel;
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private TextMeshProUGUI messageText;
 
-    private float changeTime = 5;
+    public GameObject TalkPanel => talkPanel;
+    public GameObject DialoguePanel => dialoguePanel;
+    public TextMeshProUGUI MessageText => messageText;
+    private float changeTime = 5f;
     private float nextChangeTime;
-
-    private void Start()
+    private bool isStabbed = false;
+    protected override void Start()
     {
         PickNewDirection();
     }
-
+    protected override void FixedUpdate()
+    {
+        if (!isStabbed)
+            Movement(movementDirection);
+        else
+            animationHandler.Stop();
+    }
     protected override void HandleAction()
     {
+        if (isStabbed) return;
         // Collision Layer 오브젝트에 부딪혔을 경우 혹은 일정 시간 경과시 방향 전환
-        if(Time.time >= nextChangeTime || IsBlocked())
+        if (Time.time >= nextChangeTime || IsBlocked())
         {
             PickNewDirection();
             nextChangeTime = Time.time + changeTime;
@@ -53,16 +69,37 @@ public class NPCController : BaseController
     // 내 찌르기 오브젝트 만났을때 멈추기
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(myStabTag))
+        if (collision.CompareTag(myStabTag) && !isStabbed)
         {
+            isStabbed = true;
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
                 DirectionToTarget(player.transform);
-                Rotate(lookDirection); 
+                Rotate(lookDirection);
             }
+
+            if (_rd != null)
+                _rd.velocity = Vector2.zero;
+
             movementDirection = Vector2.zero;
-            enabled = false; // 멈춤
+
+            animationHandler.Stop();
+        }
+        if (collision.CompareTag("Player"))
+        {
+            talkPanel.SetActive(true);
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            talkPanel.SetActive(false);
+            print("꺼진다.");
+        }
+    }
+
+    
 }

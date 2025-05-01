@@ -8,8 +8,7 @@ public class ProjectileMananger : BaseManager<ProjectileMananger>
     public static ProjectileMananger Instance;
 
     [SerializeField] private GameObject[] projectilePrefabs;
-    [SerializeField] private ParticleSystem impactParticleSystem;
-
+    [SerializeField] private float bulletSpeed;
     private int size = 10;
     private void Awake()
     {
@@ -19,17 +18,13 @@ public class ProjectileMananger : BaseManager<ProjectileMananger>
     public void ShootBullet(int index, Vector2 position, Vector2 direction, bool isPlayer)
     {
         GameObject bulletObj = Instantiate(projectilePrefabs[index], position, Quaternion.identity);
+  
+        // 회전 설정 (시각적 방향)
+        if (direction.x < 0)
+            bulletObj.transform.rotation = Quaternion.Euler(0f, 180f, 0f); // 왼쪽
+        else
+            bulletObj.transform.rotation = Quaternion.Euler(0f, 0f, 0f);   // 오른쪽
         var proj = bulletObj.GetComponent<ProjectileController>();
         proj.Init(direction,this,isPlayer);
-    }
-
-    public void CreateImapctParticlesAtPosition(Vector3 postion)
-    {
-        impactParticleSystem.transform.position = postion;
-        ParticleSystem.EmissionModule em = impactParticleSystem.emission;
-        em.SetBurst(0, new ParticleSystem.Burst(0, Mathf.Ceil(size)));
-        ParticleSystem.MainModule mainModule = impactParticleSystem.main;
-        mainModule.startSpeedMultiplier = 10f;
-        impactParticleSystem.Play();
     }
 }

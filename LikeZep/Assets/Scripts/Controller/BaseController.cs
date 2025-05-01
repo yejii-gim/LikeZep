@@ -14,7 +14,7 @@ public class BaseController : MonoBehaviour
     protected Vector2 lookDirection = Vector2.zero; 
     public Vector2 LookDirection { get { return lookDirection; } }
 
-    AnimationHandler animationHandler;
+    protected AnimationHandler animationHandler;
     
     protected virtual void Awake()
     {
@@ -43,7 +43,7 @@ public class BaseController : MonoBehaviour
     {
     }
 
-    private void Movement(Vector2 direction)
+    protected void Movement(Vector2 direction)
     {
         direction = direction * moveSpeed;
         _rd.velocity = direction;
