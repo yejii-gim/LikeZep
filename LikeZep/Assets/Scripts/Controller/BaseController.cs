@@ -13,7 +13,7 @@ public class BaseController : MonoBehaviour
     public Vector2 MovementDirection { get { return movementDirection; } }
     protected Vector2 lookDirection = Vector2.zero; 
     public Vector2 LookDirection { get { return lookDirection; } }
-
+    public Rigidbody2D RD { get { return _rd; } }
     protected AnimationHandler animationHandler;
     
     protected virtual void Awake()

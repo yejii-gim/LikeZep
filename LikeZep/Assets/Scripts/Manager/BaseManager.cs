@@ -19,16 +19,4 @@ public class BaseManager<T> : MonoBehaviour where T : MonoBehaviour
             return instance;
         }
     }
-
-    protected virtual void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this as T;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-    }
 }

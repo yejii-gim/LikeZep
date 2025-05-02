@@ -20,8 +20,10 @@ public class PlayerController : BaseController
     [SerializeField] private float spread = 0f;
     [Header("Riding")]
     [SerializeField] private SpriteRenderer ridingRender; // 라이딩 렌더러
+
     private NPCController currentNPC;
     private ItemController currentItem;
+    private DoorController currentDoor;
     private Camera mainCamera;
     private float lastFireTime;
     private Vector3 startPos;
@@ -29,38 +31,64 @@ public class PlayerController : BaseController
     private bool isJumping;
     DialogueLine line;
     bool isItem = false;
+    bool isDoor = false;
+    bool isQuestFirst = false;
+    private IPlayerInputStrategy currentStrategy;
+    protected override void Awake()
+    {
+        base.Awake();
+        DontDestroyOnLoad(gameObject);
+    }
     protected override void Update()
     {
         base.Update();
-        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        currentStrategy?.HandleUpdate(this);
+    }
+    public void Interact()
+    {
+        if (isDoor)
         {
-            StartCoroutine(Jump());
+            currentDoor.DoorOpen();
+            currentDoor.DoorPanel.SetActive(false);
+            return;
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!isItem && !isQuestFirst)
         {
-            TryShoot();
+            DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.firstMeeting);
+            isQuestFirst = true;
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        else if(!isItem && isQuestFirst)
         {
-            if (!isItem)
-            {
-                DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.firstMeeting);
-                line.isQuest = true;
-            }
-            else
-            {
-                UIManager.Instance.ChangeItemSlot(currentItem.Item);
-                currentItem.OpenChest();
-            }
+            DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.isQuesting);
         }
-        if(Input.GetKeyDown(KeyCode.E))
+        else
         {
-            UIManager.Instance.ToggleRiding();
+            UIManager.Instance.ChangeItemSlot(currentItem.Item);
+            currentItem.OpenChest();
         }
     }
-
     protected override void FixedUpdate()
     {
+        currentStrategy?.HandleFixedUpdate(this);
+    }
+    public void SetStrategy(IPlayerInputStrategy strategy)
+    {
+        currentStrategy = strategy;
+    }
+    public void ForMiniGameJump()
+    {
+        _rd.gravityScale = 1; // 중력 가해지게
+        Vector2 velocity = _rd.velocity;
+        velocity.x = 3f;       // x 방향 고정 속도
+        velocity.y = 5f;       // 점프
+        _rd.velocity = velocity;
+
+        float angle = Mathf.Clamp(_rd.velocity.y * 10f, -90f, 90f);
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+    public void Move()
+    {
+        _rd.gravityScale = 0;
         Movement(movementDirection);
     }
     protected override void Rotate(Vector2 direction)
@@ -88,7 +116,7 @@ public class PlayerController : BaseController
             lookDirection = movementDirection;
     }
 
-    private void TryShoot()
+    public void TryShoot()
     {
         if (Time.time >= lastFireTime + fireRate)
         {
@@ -105,7 +133,13 @@ public class PlayerController : BaseController
     {
         base.Death();
     }
-
+    public void StartJump()
+    {
+        if (!isJumping)
+        {
+            StartCoroutine(Jump());
+        }
+    }
     private IEnumerator Jump()
     {
         isJumping = true;
@@ -138,10 +172,9 @@ public class PlayerController : BaseController
                 var npcName = currentNPC.name;
                 line = DialogueManager.Instance.dialogueLines.Find(d => d.npcName == npcName);  
                 npc.DialoguePanel.SetActive(true);
-                if (!line.isQuest)
+                if (!isQuestFirst)
                 {
                     ItemManager.Instance.SpawnChest();
-                    line.isQuest = true;
                 }
                 else
                 {
@@ -153,6 +186,7 @@ public class PlayerController : BaseController
                     isItem = false;
                 }
             }
+            return;
         }
         if(collision.CompareTag("Item"))
         {
@@ -160,12 +194,21 @@ public class PlayerController : BaseController
             currentItem = item; 
 
             isItem = true;
-
         }
         if (collision.CompareTag("Coin"))
         {
             UIManager.coinCount++;
             UIManager.Instance.CoinUpdate();
+        }
+        if (collision.CompareTag("Door"))
+        {
+            DoorController door = collision.gameObject.GetComponent<DoorController>();
+            currentDoor = door;
+            currentNPC = null; 
+            isItem = false;  
+            line = null;
+            isDoor = true;
+            door.DoorPanel.SetActive(true);
         }
     }
 
@@ -184,6 +227,12 @@ public class PlayerController : BaseController
         if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Door"))
+        {
+            DoorController door = collision.gameObject.GetComponent<DoorController>();
+            isDoor = false;
         }
     }
 

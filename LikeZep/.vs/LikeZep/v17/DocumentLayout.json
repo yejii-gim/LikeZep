@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|c:\\users\\yejigim\\documents\\github\\likezep2\\likezep\\assets\\scripts\\ui\\uibase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uibase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|c:\\users\\yejigim\\documents\\github\\likezep2\\likezep\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|c:\\users\\yejigim\\documents\\github\\likezep2\\likezep\\assets\\scripts\\ui\\uiriding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiriding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\ui\\uiclothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiclothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\dialogue\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,56 +27,76 @@
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\scene\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\ui\\uibase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uibase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\npcmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\npcmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\projectilemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\projectilemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\ui\\uiriding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiriding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\projectilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\projectilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\controller\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\anim\u0026particle\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anim\u0026particle\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\item\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\item\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\anim\u0026particle\\dustparticlecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anim\u0026particle\\dustparticlecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\manager\\projectilemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\projectilemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\ui\\uiclothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiclothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\dialogue\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogueline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\item\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FA1DA-E329-14C2-661E-C896BD733E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\item\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\minigamestrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\minigamestrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\defaultmovestrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\defaultmovestrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\assets\\scripts\\iplayerinputstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\iplayerinputstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,62 +106,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 21,
+              "Title": "MiniGameStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\MiniGameStrategy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MiniGameStrategy.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\MiniGameStrategy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MiniGameStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:24:48.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DefaultMoveStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\DefaultMoveStrategy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DefaultMoveStrategy.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\DefaultMoveStrategy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DefaultMoveStrategy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:05:08.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IPlayerInputStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\IPlayerInputStrategy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IPlayerInputStrategy.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\IPlayerInputStrategy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IPlayerInputStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:04:36.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GoScene.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Scene\\GoScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Scene\\GoScene.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Scene\\GoScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Scene\\GoScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T05:23:34.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DoorController.cs",
+              "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\DoorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\DoorController.cs",
+              "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\DoorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controller\\DoorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:54:20.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UIBase.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIBase.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIBase.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UIBase.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:09:20.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T04:09:20.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "UIRiding.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIRiding.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIRiding.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIRiding.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UIRiding.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T02:17:03.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T02:17:03.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "UIClothes.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIClothes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIClothes.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\UI\\UIClothes.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UIClothes.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T15:32:12.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T15:32:12.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NPCManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\NPCManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\NPCManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\NPCManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\NPCManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T10:31:45.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "ProjectileMananger.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\ProjectileMananger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\ProjectileMananger.cs",
@@ -165,19 +242,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "NPCController.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\NPCController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\NPCController.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\NPCController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\NPCController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T08:35:58.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "ItemData.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Item\\ItemData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Item\\ItemData.cs",
@@ -189,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AnimationHandler.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Anim\u0026Particle\\AnimationHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anim\u0026Particle\\AnimationHandler.cs",
@@ -201,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\ItemController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\ItemController.cs",
@@ -213,37 +290,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ItemManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\ItemManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\ItemManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\ItemManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\ItemManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T07:30:11.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T07:10:31.113Z"
+              "WhenOpened": "2025-05-01T07:10:31.113Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "BaseManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\BaseManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\BaseManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\BaseManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\BaseManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T07:10:29.949Z"
             },
@@ -255,7 +333,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\PlayerController.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\PlayerController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA5wFoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T07:10:25.712Z"
             },
@@ -267,31 +345,31 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\ProjectileController.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\ProjectileController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\ProjectileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T07:10:25.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UIManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\UIManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\UIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\UIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T07:03:08.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\DialogueManager.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Manager\\DialogueManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\DialogueManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCEAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T06:58:54.781Z"
             },
@@ -303,13 +381,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\BaseController.cs",
               "ToolTip": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Controller\\BaseController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\BaseController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAzwD8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T06:56:23.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "DialogueLine.cs",
               "DocumentMoniker": "C:\\Users\\YEJIGIM\\Documents\\GitHub\\LikeZep2\\LikeZep\\Assets\\Scripts\\Dialogue\\DialogueLine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueLine.cs",
@@ -317,8 +395,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Dialogue\\DialogueLine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T06:56:21.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T06:56:21.881Z"
             }
           ]
         }

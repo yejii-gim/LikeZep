@@ -20,10 +20,12 @@ public class UIManager : BaseManager<UIManager>
     [SerializeField] public GameObject charcterRiding;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float rideOffsetY = 0.2f;
-
+    [Header("Door")]
+    
     public static int coinCount = 10;
 
     bool ridingActive = false;
+
     private void Awake()
     {
         Instance = this;
@@ -98,4 +100,6 @@ public class UIManager : BaseManager<UIManager>
 
         playerTransform.position = targetPos;
     }
+
+    
 }

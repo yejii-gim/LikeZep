@@ -21,11 +21,11 @@ public class NPCController : BaseController
     private float nextChangeTime;
     private bool isStabbed = false;
     private bool isActive = false;
-    private void Start()
+    protected override void Start()
     {
         NPCManager.Instance.RegisterNPC(this);
     }
-    private void Awake()
+    protected override void Awake()
     {
         base.Awake();
     }
