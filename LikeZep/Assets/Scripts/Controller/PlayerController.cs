@@ -18,7 +18,8 @@ public class PlayerController : BaseController
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private int bulletIndex = 0;
     [SerializeField] private float spread = 0f;
-
+    [Header("Riding")]
+    [SerializeField] private SpriteRenderer ridingRender; // 라이딩 렌더러
     private NPCController currentNPC;
     private ItemController currentItem;
     private Camera mainCamera;
@@ -52,13 +53,28 @@ public class PlayerController : BaseController
                 currentItem.OpenChest();
             }
         }
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            UIManager.Instance.ToggleRiding();
+        }
     }
 
     protected override void FixedUpdate()
     {
         Movement(movementDirection);
     }
+    protected override void Rotate(Vector2 direction)
+    {
+        base.Rotate(direction); // 기존 회전 처리
 
+        float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        bool isLeft = Mathf.Abs(rotZ) > 90f;
+
+        if (ridingRender != null)
+        {
+            ridingRender.flipX = isLeft;
+        }
+    }
     protected override void HandleAction()
     {
         // 키보드 입력을 통해 이동 방향 계산 (좌/우/상/하)
