@@ -13,6 +13,8 @@ public class NPCController : BaseController
     [SerializeField] private GameObject talkPanel;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI messageText;
+    [SerializeField] private string npcId;
+    public string NpcId => npcId;
     public GameObject TalkPanel{get => talkPanel;}
     public GameObject DialoguePanel { get => dialoguePanel;  }
     public TextMeshProUGUI MessageText { get => messageText; }
@@ -23,6 +25,7 @@ public class NPCController : BaseController
     private bool isActive = false;
     protected override void Start()
     {
+        npcId = gameObject.name;
         NPCManager.Instance.RegisterNPC(this);
     }
     protected override void Awake()

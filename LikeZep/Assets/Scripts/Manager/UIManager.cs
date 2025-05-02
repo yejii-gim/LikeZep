@@ -34,6 +34,7 @@ public class UIManager : BaseManager<UIManager>
     public static int minigameScore = 0;
     bool ridingActive = false;
     int currentScore;
+    int bestScore = 0;
     private void Awake()
     {
         if (Instance != this && Instance != null)
@@ -47,6 +48,7 @@ public class UIManager : BaseManager<UIManager>
             DontDestroyOnLoad(gameObject);
         }
         currentScore = 0;
+        scoreText.text = currentScore.ToString();
         coinText.text = coinCount.ToString();
     }
 
@@ -121,7 +123,14 @@ public class UIManager : BaseManager<UIManager>
 
     public void GameOver()
     {
+        scoreText.text = "0";
         GameOverPanel.SetActive(true);
+        currentScoreText.text = currentScore.ToString();
+        if(bestScore < currentScore)
+        {
+            bestScore = currentScore;
+            bestScoreText.text = bestScore.ToString();
+        }
         Time.timeScale = 0;
     }
 

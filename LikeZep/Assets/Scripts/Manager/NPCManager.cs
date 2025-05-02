@@ -24,29 +24,55 @@ public class NPCManager : BaseManager<NPCManager>
     }
     private void Start()
     {
-        if (npcs.Count > 0)
+        if(npcs.Count > 0)
         {
             npcs[0].Activate();
         }
     }
 
-    // 현재 NPC가 완료되었을 때 다음 NPC를 활성화
     public void NotifyNPCCompleted(NPCController completedNPC)
     {
-        if (npcs.Contains(completedNPC))
+        if (currentIndex < npcs.Count && npcs[currentIndex] == completedNPC)
         {
-            npcs.Remove(completedNPC);
-        }
-
-        if (npcs.Count > 0)
-        {
-            npcs[0].Activate();
+            npcs.RemoveAt(currentIndex);
+            currentIndex++;
+            ActivateCurrentNPC();
         }
     }
 
+    private void ActivateCurrentNPC()
+    {
+        CleanupInvalidNPCs();
+
+        if (currentIndex < npcs.Count)
+        {
+            var npc = npcs[currentIndex];
+            if (npc != null)
+            {
+                npc.Activate();
+            }
+            else
+            {
+                Debug.LogWarning($"NPC {currentIndex}가 null입니다. 다음 NPC로 이동.");
+                currentIndex++;
+                ActivateCurrentNPC(); // null이면 다음 NPC로 재귀 호출
+            }
+        }
+        else
+        {
+            Debug.Log("모든 NPC 완료!");
+        }
+    }
+    private void CleanupInvalidNPCs()
+    {
+        npcs = npcs.FindAll(npc => npc != null);
+    }
     // NPC 등록
     public void RegisterNPC(NPCController npc)
     {
-        npcs.Add(npc);
+        if (!npcs.Contains(npc))
+        {
+            npcs.Add(npc);
+        }
     }
 }
