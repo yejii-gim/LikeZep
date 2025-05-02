@@ -32,9 +32,14 @@ public class UIManager : BaseManager<UIManager>
     [SerializeField] GameObject miniUI;
     public static int coinCount = 10;
     public static int minigameScore = 0;
+    [Header("Ranking")]
+    [SerializeField] GameObject rankingUI;
+    [SerializeField] TMP_Text[] rankingScore;
+
     bool ridingActive = false;
     int currentScore;
     int bestScore = 0;
+    private const int MaxRank = 5;
     private void Awake()
     {
         if (Instance != this && Instance != null)
@@ -126,7 +131,11 @@ public class UIManager : BaseManager<UIManager>
         scoreText.text = "0";
         GameOverPanel.SetActive(true);
         currentScoreText.text = currentScore.ToString();
-        if(bestScore < currentScore)
+
+        // 랭킹 저장 및 업데이트
+        SaveScoreRanking(currentScore);
+
+        if (bestScore < currentScore)
         {
             bestScore = currentScore;
             bestScoreText.text = bestScore.ToString();
@@ -138,6 +147,7 @@ public class UIManager : BaseManager<UIManager>
     {
         currentScore = 0;
         SceneManager.LoadScene(0);
+        GameOverPanel.SetActive(false);
         Time.timeScale = 1;
         openMainUI();
     }
@@ -166,5 +176,47 @@ public class UIManager : BaseManager<UIManager>
     {
         mainUI.SetActive(false);
         miniUI.SetActive(true);
+    }
+
+    private void SaveScoreRanking(int score)
+    {
+        List<int> scores = new List<int>();
+
+        for (int i = 0; i < MaxRank; i++)
+        {
+            scores.Add(PlayerPrefs.GetInt("HighScore" + i, 0));
+        }
+
+        scores.Add(score);
+        scores.Sort((a, b) => b.CompareTo(a));
+        scores = scores.GetRange(0, MaxRank);
+
+        // 다시 저장
+        for (int i = 0; i < MaxRank; i++)
+        {
+            PlayerPrefs.SetInt("HighScore" + i, scores[i]);
+        }
+
+        PlayerPrefs.Save();
+    }
+
+    public void ShowRanking()
+    {
+        for (int i = 0; i < MaxRank; i++)
+        {
+            int score = PlayerPrefs.GetInt("HighScore" + i, 000);
+            rankingScore[i].text = $"{i + 1}. {score}\n";
+        }
+    }
+
+    public void openRankingButton()
+    {
+        ShowRanking();
+        rankingUI.SetActive(true);
+    }
+
+    public void closeRankingButton()
+    {
+        rankingUI.SetActive(false);
     }
 }
