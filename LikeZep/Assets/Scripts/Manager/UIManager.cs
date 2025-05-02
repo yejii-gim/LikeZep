@@ -11,12 +11,16 @@ public class UIManager : BaseManager<UIManager>
     [SerializeField] private Button riding;
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private GameObject coinPrefab;
-
-    public static int coinCount;
+    [Header("Clothes")]
+    [SerializeField] private GameObject clothesPanel;
+    [SerializeField] private GameObject needCoinPanel;
+    [SerializeField] private UIClothes clothesUI;
+    public static int coinCount = 10;
+    
     private void Awake()
     {
         Instance = this;
-        coinText.text = "0";
+        coinText.text = coinCount.ToString();
     }
 
     public void ChangeItemSlot(ItemData item)
@@ -42,5 +46,16 @@ public class UIManager : BaseManager<UIManager>
     public void CoinUpdate()
     {
         coinText.text = coinCount.ToString();
+    }
+
+    public void ToggleClothesPanel()
+    {
+        clothesUI.UpdateClothesButtons();
+        clothesPanel.SetActive(!clothesPanel.activeSelf);
+    }
+
+    public void ToggleNeedCoinPanel()
+    {
+        needCoinPanel.SetActive(!needCoinPanel.activeSelf);
     }
 }
