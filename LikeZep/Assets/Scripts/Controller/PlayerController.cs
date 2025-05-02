@@ -37,6 +37,14 @@ public class PlayerController : BaseController
     protected override void Awake()
     {
         base.Awake();
+
+        var existing = FindObjectsOfType<PlayerController>();
+        if (existing.Length > 1)
+        {
+            Destroy(gameObject); // 이미 하나 있다면 자신 제거
+            return;
+        }
+
         DontDestroyOnLoad(gameObject);
     }
     protected override void Update()
@@ -74,6 +82,11 @@ public class PlayerController : BaseController
     public void SetStrategy(IPlayerInputStrategy strategy)
     {
         currentStrategy = strategy;
+    }
+    public void PlayerPositionReset()
+    {
+        Vector3 newPos = new Vector3(0f, 0f, 0f); // 플레이어는 보통 z = 0
+        transform.position = newPos;
     }
     public void ForMiniGameJump()
     {
@@ -209,6 +222,16 @@ public class PlayerController : BaseController
             line = null;
             isDoor = true;
             door.DoorPanel.SetActive(true);
+        }
+
+        if (collision.CompareTag("Obstacle"))
+        {
+            UIManager.Instance.GameOver();
+        }
+
+        if (collision.CompareTag("Score"))
+        {
+            UIManager.Instance.AddScore();
         }
     }
 

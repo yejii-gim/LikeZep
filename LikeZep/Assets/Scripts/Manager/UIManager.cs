@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : BaseManager<UIManager>
@@ -20,14 +22,21 @@ public class UIManager : BaseManager<UIManager>
     [SerializeField] public GameObject charcterRiding;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float rideOffsetY = 0.2f;
-    [Header("Door")]
-    
+    [Header("MiniGame")]
+    [SerializeField] private GameObject GameOverPanel;
+    [SerializeField] TMP_Text scoreText; // 가운데 크게 보여지는 점수
+    [SerializeField] TMP_Text bestScoreText; // 최고 점수
+    [SerializeField] TMP_Text currentScoreText; // 현재 점수
+    [Header("UI")]
+    [SerializeField] GameObject mainUI;
+    [SerializeField] GameObject miniUI;
     public static int coinCount = 10;
-
+    public static int minigameScore = 0;
     bool ridingActive = false;
-
+    int currentScore;
     private void Awake()
     {
+        currentScore = 0;
         Instance = this;
         coinText.text = coinCount.ToString();
     }
@@ -101,5 +110,43 @@ public class UIManager : BaseManager<UIManager>
         playerTransform.position = targetPos;
     }
 
-    
+    public void GameOver()
+    {
+        GameOverPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void GameOverExitButton()
+    {
+        currentScore = 0;
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        openMainUI();
+    }
+
+    public void RestartButton()
+    {
+        currentScore = 0;
+        GameOverPanel.SetActive(false);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+
+    public void AddScore()
+    {
+        currentScore++;
+        scoreText.text = currentScore.ToString();
+    }
+
+    public void openMainUI()
+    {
+        mainUI.SetActive(true);
+        miniUI.SetActive(false);
+    }
+
+    public void openMiniUI()
+    {
+        mainUI.SetActive(false);
+        miniUI.SetActive(true);
+    }
 }
