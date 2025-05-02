@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueLine : MonoBehaviour
+[System.Serializable]
+public class DialogueLine
 {
     public string npcName; // NPC이름
     public string firstMeeting; // 첫번째 만날때

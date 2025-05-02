@@ -12,7 +12,16 @@ public class ProjectileMananger : BaseManager<ProjectileMananger>
     private int size = 10;
     private void Awake()
     {
-        Instance = this;
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void ShootBullet(int index, Vector2 position, Vector2 direction, bool isPlayer)

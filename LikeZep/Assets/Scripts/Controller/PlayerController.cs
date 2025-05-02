@@ -54,6 +54,7 @@ public class PlayerController : BaseController
     }
     public void Interact()
     {
+
         if (isDoor)
         {
             currentDoor.DoorOpen();
@@ -62,6 +63,8 @@ public class PlayerController : BaseController
         }
         if (!isItem && !isQuestFirst)
         {
+            Debug.Log($"[DEBUG] line null? {line == null}");
+            Debug.Log($"[DEBUG] line.firstMeeting null? {line?.firstMeeting == null}");
             DialogueManager.Instance.ShowDialogue(currentNPC.DialoguePanel, currentNPC.MessageText, line.firstMeeting);
             isQuestFirst = true;
         }
@@ -86,6 +89,7 @@ public class PlayerController : BaseController
     public void PlayerPositionReset()
     {
         Vector3 newPos = new Vector3(0f, 0f, 0f); // 플레이어는 보통 z = 0
+        
         transform.position = newPos;
     }
     public void ForMiniGameJump()

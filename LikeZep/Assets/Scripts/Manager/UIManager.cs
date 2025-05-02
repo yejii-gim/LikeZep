@@ -36,8 +36,17 @@ public class UIManager : BaseManager<UIManager>
     int currentScore;
     private void Awake()
     {
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         currentScore = 0;
-        Instance = this;
         coinText.text = coinCount.ToString();
     }
 

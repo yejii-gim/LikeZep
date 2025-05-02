@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCManager : BaseManager<NPCManager>
 {
@@ -10,9 +11,17 @@ public class NPCManager : BaseManager<NPCManager>
     private int currentIndex = 0;
     private void Awake()
     {
-        Instance = this;
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
-
     private void Start()
     {
         if (npcs.Count > 0)

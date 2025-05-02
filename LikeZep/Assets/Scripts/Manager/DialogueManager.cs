@@ -12,7 +12,16 @@ public class DialogueManager : BaseManager<DialogueManager>
     private Coroutine typingCoroutine;
     private void Awake()
     {
-        Instance = this;
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void Init()

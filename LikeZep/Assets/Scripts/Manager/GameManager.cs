@@ -53,6 +53,7 @@ public class GameManager : BaseManager<GameManager>
     public void SetDefaultMode()
     {
         UIManager.Instance.openMainUI();
+        DialogueManager.Instance.Init();
         player.SetStrategy(defaultStrategy);
     }
     
