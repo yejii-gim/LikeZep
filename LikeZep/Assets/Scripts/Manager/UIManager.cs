@@ -215,7 +215,7 @@ public class UIManager : BaseManager<UIManager>
         rankingUI.SetActive(true);
     }
 
-    public void closeRankingButton()
+    public void CloseRankingButton()
     {
         rankingUI.SetActive(false);
     }
