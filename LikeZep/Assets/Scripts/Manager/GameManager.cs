@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : BaseManager<GameManager>
 {
-    public static GameManager Instance;
     [SerializeField] private PlayerController player;
 
     private IPlayerInputStrategy defaultStrategy = new DefaultMoveStrategy();
-    private IPlayerInputStrategy miniGameStrategy = new MiniGameStrategy(); // 예시 전략
+    private IPlayerInputStrategy miniGameStrategy = new MiniGameStrategy(); 
 
     private void Start()
     {
@@ -17,52 +16,39 @@ public class GameManager : BaseManager<GameManager>
         DialogueManager.Instance.Init();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-    private void Awake()
-    {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         CameraController cam = FindObjectOfType<CameraController>();
         cam?.ResetCameraPosition();
         if (player == null)
-            player = FindObjectOfType<PlayerController>(); // 혹시라도 씬 전환으로 player가 null이면 찾아줌
+            player = FindObjectOfType<PlayerController>();
         player.PlayerPositionReset();
         if (scene.name == "FlappyBird")
         {
-            SetMiniGameMode();
-            cam?.SetMiniGameMode(true);
+            SetMiniGameMode(cam);
             player.SetStrategy(miniGameStrategy);
         }
         else if (scene.name == "MainScene")
         {
-            SetDefaultMode();
-            cam?.SetMiniGameMode(false);
+            SetDefaultMode(cam);
             player.SetStrategy(defaultStrategy);
         }
     }
-    public void SetDefaultMode()
+    public void SetDefaultMode(CameraController cam = null)
     {
-        UIManager.Instance.openMainUI();
+        UIManager.Instance.OpenMainUI();
         DialogueManager.Instance.Init();
         player.SetStrategy(defaultStrategy);
+        cam?.SetMiniGameMode(false);
     }
     
-    public void SetMiniGameMode()
+    public void SetMiniGameMode(CameraController cam = null)
     {
-        UIManager.Instance.openMiniUI();
+        UIManager.Instance.OpenMiniUI();
         BGLooper looper = GameObject.FindObjectOfType<BGLooper>();
         looper?.Init();
         
         player.SetStrategy(miniGameStrategy);
+        cam?.SetMiniGameMode(true);
     }
 }

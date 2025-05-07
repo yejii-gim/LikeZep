@@ -5,23 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NPCManager : BaseManager<NPCManager>
 {
-    public static NPCManager Instance;
 
     [SerializeField] List<NPCController> npcs = new List<NPCController>();
     private int currentIndex = 0;
-    private void Awake()
-    {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
+
     private void Start()
     {
         if(npcs.Count > 0)

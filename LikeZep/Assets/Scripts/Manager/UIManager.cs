@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class UIManager : BaseManager<UIManager>
 {
-    public static UIManager Instance;
     [SerializeField] private Image itemSlot;
     [SerializeField] private Button riding;
     [SerializeField] private TMP_Text coinText;
@@ -30,28 +29,20 @@ public class UIManager : BaseManager<UIManager>
     [Header("UI")]
     [SerializeField] GameObject mainUI;
     [SerializeField] GameObject miniUI;
-    public static int coinCount = 10;
-    public static int minigameScore = 0;
     [Header("Ranking")]
     [SerializeField] GameObject rankingUI;
     [SerializeField] TMP_Text[] rankingScore;
 
-    bool ridingActive = false;
-    int currentScore;
-    int bestScore = 0;
-    private const int MaxRank = 5;
-    private void Awake()
+    public static int coinCount = 0;
+    public static int minigameScore = 0;
+    private bool ridingActive = false;
+
+    private int currentScore;
+    private int bestScore = 0;
+    
+    protected override void Awake()
     {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        base.Awake();
         currentScore = 0;
         scoreText.text = currentScore.ToString();
         coinText.text = coinCount.ToString();
@@ -82,27 +73,21 @@ public class UIManager : BaseManager<UIManager>
         coinText.text = coinCount.ToString();
     }
 
-    public void ToggleClothesPanel()
+    public void TogglePanel(GameObject panel)
     {
-        clothesPanel.SetActive(!clothesPanel.activeSelf);
+        panel.SetActive(!panel.activeSelf);
     }
 
-    public void ToggleNeedCoinPanel()
-    {
-        needCoinPanel.SetActive(!needCoinPanel.activeSelf);
-    }
-
-    public void ToggleRidingPanel()
-    {
-        ridingPanel.SetActive(!ridingPanel.activeSelf);
-    }
-
+    public void ToggleClothesPanel() => TogglePanel(clothesPanel);
+    public void ToggleRidingPanel() => TogglePanel(ridingPanel);
+    public void ToggleNeedCoinPanel() => TogglePanel(needCoinPanel);
     public void ToggleRiding()
     {
         ridingActive = charcterRiding.activeSelf;
         StartCoroutine(SmoothRidingTransition(!ridingActive));
     }
 
+    // 라이딩할때 효과넣어주는 코루틴
     private IEnumerator SmoothRidingTransition(bool riding)
     {
         float duration = 0.2f;
@@ -132,32 +117,35 @@ public class UIManager : BaseManager<UIManager>
         GameOverPanel.SetActive(true);
         currentScoreText.text = currentScore.ToString();
 
-        // 랭킹 저장 및 업데이트
-        SaveScoreRanking(currentScore);
-
-        if (bestScore < currentScore)
+        SaveManager.Instance.SaveScoreRanking(currentScore);
+        UpdateBestScoreUI();
+  
+        Time.timeScale = 0;
+    }
+    // 베스트 스코어 업데이트
+    private void UpdateBestScoreUI()
+    {
+        if (currentScore > bestScore)
         {
             bestScore = currentScore;
             bestScoreText.text = bestScore.ToString();
         }
-        Time.timeScale = 0;
     }
+    public void RestartButton() => LoadSceneWithReset(1);
+    public void GameOverExitButton() => LoadSceneWithReset(0);
 
-    public void GameOverExitButton()
+    private void LoadSceneWithReset(int sceneIndex)
     {
         currentScore = 0;
-        SceneManager.LoadScene(0);
+        scoreText.text = currentScore.ToString();
         GameOverPanel.SetActive(false);
         Time.timeScale = 1;
-        openMainUI();
-    }
+        SceneManager.LoadScene(sceneIndex);
 
-    public void RestartButton()
-    {
-        currentScore = 0;
-        GameOverPanel.SetActive(false);
-        Time.timeScale = 1;
-        SceneManager.LoadScene(1);
+        if (sceneIndex == 0)
+            OpenMainUI();
+        else
+            OpenMiniUI();
     }
 
     public void AddScore()
@@ -166,52 +154,25 @@ public class UIManager : BaseManager<UIManager>
         scoreText.text = currentScore.ToString();
     }
 
-    public void openMainUI()
+    public void OpenMainUI()
     {
         mainUI.SetActive(true);
         miniUI.SetActive(false);
     }
 
-    public void openMiniUI()
+    public void OpenMiniUI()
     {
         mainUI.SetActive(false);
         miniUI.SetActive(true);
     }
 
-    private void SaveScoreRanking(int score)
+    public void OpenRankingButton()
     {
-        List<int> scores = new List<int>();
-
-        for (int i = 0; i < MaxRank; i++)
-        {
-            scores.Add(PlayerPrefs.GetInt("HighScore" + i, 0));
-        }
-
-        scores.Add(score);
-        scores.Sort((a, b) => b.CompareTo(a));
-        scores = scores.GetRange(0, MaxRank);
-
-        // 다시 저장
-        for (int i = 0; i < MaxRank; i++)
-        {
-            PlayerPrefs.SetInt("HighScore" + i, scores[i]);
-        }
-
-        PlayerPrefs.Save();
-    }
-
-    public void ShowRanking()
-    {
-        for (int i = 0; i < MaxRank; i++)
+        for (int i = 0; i < SaveManager.MaxRank; i++)
         {
             int score = PlayerPrefs.GetInt("HighScore" + i, 000);
             rankingScore[i].text = $"{i + 1}. {score}\n";
         }
-    }
-
-    public void openRankingButton()
-    {
-        ShowRanking();
         rankingUI.SetActive(true);
     }
 

@@ -19,4 +19,17 @@ public class BaseManager<T> : MonoBehaviour where T : MonoBehaviour
             return instance;
         }
     }
+
+    protected virtual void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this as T;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

@@ -51,7 +51,7 @@ public class UIBase : MonoBehaviour
         }
     }
 
-    // 구매할때 10원이상 있는 경우
+    // 구매할때
     protected void TryPurchaseClothing(int index, GameObject[] gameObjects,Image[] Images, SpriteRenderer sprite, Animator animator, RuntimeAnimatorController[] animators,int price)
     {
         if (UIManager.coinCount < price)
@@ -72,7 +72,7 @@ public class UIBase : MonoBehaviour
         ChangeSprite(gameObjects, index, Images, sprite, animator, animators);
     }
 
-    // clothes 버튼들 리스너 설정
+    // 버튼들 리스너 설정
     protected void UpdateButtons(GameObject[] gameObjects, Image[] Images, SpriteRenderer sprite, Animator animator, RuntimeAnimatorController[] animators,int price = 5)
     {
         for (int i = 0; i < gameObjects.Length; i++)

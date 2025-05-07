@@ -5,24 +5,10 @@ using UnityEngine;
 
 public class ProjectileMananger : BaseManager<ProjectileMananger>
 {
-    public static ProjectileMananger Instance;
 
     [SerializeField] private GameObject[] projectilePrefabs;
     [SerializeField] private float bulletSpeed;
     private int size = 10;
-    private void Awake()
-    {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
 
     public void ShootBullet(int index, Vector2 position, Vector2 direction, bool isPlayer)
     {

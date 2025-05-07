@@ -6,23 +6,9 @@ using UnityEngine.UI;
 
 public class DialogueManager : BaseManager<DialogueManager>
 {
-    public static DialogueManager Instance;
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
     private float typingspeed = 0.1f;
     private Coroutine typingCoroutine;
-    private void Awake()
-    {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
 
     public void Init()
     {
