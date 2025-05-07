@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public float highPosY = 8f;
-    public float lowPosY = -3f;
-
-    public float holeSizeMin = 5f;
-    public float holeSizeMax = 8f;
+    [SerializeField] private float highPosY = 8f;
+    [SerializeField] private float lowPosY = -3f;
+    [SerializeField][Range(0f, 1f)] private float coinSpawnChance = 0.3f;
 
     public Transform topObject;
     public Transform bottomObject;
@@ -17,9 +15,6 @@ public class Obstacle : MonoBehaviour
 
     public Vector3 SetRandomPlace(Vector3 lastPosition, int obstacleCount)
     {
-        float holeSize = Random.Range(holeSizeMin, holeSizeMax);
-        float halfHoleSize = holeSize / 2f;
-
         topObject.localPosition = new Vector3(0, 7);
         bottomObject.localPosition = new Vector3(0, -7);
 
@@ -27,6 +22,15 @@ public class Obstacle : MonoBehaviour
         placePostion.y = Random.Range(lowPosY, highPosY);
 
         transform.position = placePostion;
+
+        // 코인 랜덤으로 생성
+        if (Random.value < coinSpawnChance)
+        {
+            float middleY = (topObject.position.y + bottomObject.position.y) / 2f;
+            Vector3 spawnPos = new Vector3(transform.position.x, middleY, 0f);
+            UIManager.Instance.CoinSpawn(spawnPos);
+        }
+
 
         return placePostion;
     }

@@ -68,6 +68,11 @@ public class UIManager : BaseManager<UIManager>
         Instantiate(coinPrefab, position.position, Quaternion.identity);
     }
 
+    public void CoinSpawn(Vector3 position)
+    {
+        Instantiate(coinPrefab, position, Quaternion.identity);
+    }
+
     public void CoinUpdate()
     {
         coinText.text = coinCount.ToString();
